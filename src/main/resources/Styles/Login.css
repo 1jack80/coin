@@ -1,10 +1,7 @@
-@font-face {
-    font-family: 'Nunito';
-    src: url('fonts/Nunito.ttf');
+Text, Label,Button {
+    -fx-font-family: "Nunito"
 }
-.text, Label, .label {
-    -fx-font-family: "Nunito";
-}
+
 .login_container {
     -fx-background-color: #eeeeee;
 }

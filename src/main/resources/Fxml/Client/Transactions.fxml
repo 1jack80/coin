@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="transactions_container" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.j.coin.Controllers.Client.TransactionsController">
+   <stylesheets>
+      <URL value="@../../Styles/Transactions.css"/>
+   </stylesheets>
+   <Text layoutX="336.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transactions"
+         AnchorPane.leftAnchor="336.0" AnchorPane.topAnchor="14.142501831054688"/>
+   <ListView fx:id="transactions_listview" prefHeight="640.0" prefWidth="830.0" AnchorPane.leftAnchor="14.0"
+             AnchorPane.topAnchor="100.0"/>
+</AnchorPane>

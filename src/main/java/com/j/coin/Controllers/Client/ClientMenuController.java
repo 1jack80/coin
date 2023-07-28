@@ -1,5 +1,7 @@
 package com.j.coin.Controllers.Client;
 
+import com.j.coin.Models.Model;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
@@ -16,6 +18,12 @@ public class ClientMenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        transaction_btn.setOnAction(actionEvent -> {
+            Model.getInstance().getViewFactory().getClientSelectedMenuItem().setValue("Transactions");
+        });
 
+        dashboard_btn.setOnAction(actionEvent -> {
+            Model.getInstance().getViewFactory().getClientSelectedMenuItem().setValue("Dashboard");
+        });
     }
 }
