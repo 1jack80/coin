@@ -14,25 +14,19 @@
          </font></Text>
     </VBox>
     <VBox layoutX="310.0" layoutY="14.0" prefHeight="200.0" prefWidth="271.0" styleClass="login_form_container" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
-      <VBox styleClass="label-input-contianer">
-         <children>
-              <Label id="choice-prompt-text" text="Choose Your Account Type" />
-              <ChoiceBox fx:id="account_selector" prefWidth="150.0" styleClass="account_selector" />
-         </children>
-      </VBox>
-      <VBox styleClass="label-input-contianer">
-         <children>
-              <Label fx:id="payee_address_lbl" text="Payee Address" />
-              <TextField fx:id="payee_address_fld" styleClass="input_field" />
-         </children>
-      </VBox>
-      <VBox layoutX="10.0" layoutY="81.0" styleClass="label-input-contianer">
-         <children>
-              <Label text="Password" />
-              <TextField fx:id="password_fld" styleClass="input_field" />
-         </children>
-      </VBox>
+        <VBox styleClass="label-input-contianer">
+            <Label id="choice-prompt-text" text="Choose Your Account Type"/>
+            <ChoiceBox fx:id="account_selector" prefWidth="150.0" styleClass="account_selector"/>
+        </VBox>
+        <VBox styleClass="label-input-contianer">
+            <Label fx:id="payee_address_lbl" text="Payee Address"/>
+            <TextField fx:id="payee_address_fld" styleClass="input_field"/>
+        </VBox>
+        <VBox layoutX="10.0" layoutY="81.0" styleClass="label-input-contianer">
+            <Label text="Password"/>
+            <TextField fx:id="password_fld" styleClass="input_field"/>
+        </VBox>
         <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
-        <Label fx:id="error_lbl" styleClass="error_lbl" text="Error" />
+        <Label fx:id="error_lbl" styleClass="error_lbl" />
     </VBox>
 </AnchorPane>
