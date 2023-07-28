@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 
 public class ViewFactory {
     private AnchorPane dashboradView;
+    private Stage currentStage;
 
     public ViewFactory() {};
 
@@ -35,6 +36,9 @@ public class ViewFactory {
     }
 
     private void createStage(FXMLLoader loader) {
+        if (this.currentStage != null) {
+            this.currentStage.close();
+        }
         Scene scene = null;
         try {
             scene = new Scene(loader.load());
@@ -44,6 +48,7 @@ public class ViewFactory {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Coin Bank");
+        this.currentStage = stage;
         stage.show();
     }
 }
