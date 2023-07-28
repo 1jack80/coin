@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Nunito';
-    src: url('./fonts/Nunito.ttf');
+    src: url('fonts/Nunito.ttf');
 }
 .text, Label, .label {
     -fx-font-family: "Nunito";

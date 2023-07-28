@@ -4,12 +4,8 @@ module com.j.coin {
     requires de.jensd.fx.glyphs.fontawesome;
     requires java.sql;
     requires org.xerial.sqlitejdbc;
-    requires javafx.web;
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
     requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
 
     opens com.j.coin to javafx.fxml;
     exports com.j.coin;
