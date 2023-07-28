@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/Login.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.j.coin.Controllers.LoginController">
+    <VBox prefHeight="200.0" prefWidth="200.0" styleClass="logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FontAwesomeIconView glyphName="BANK" size="36.0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CoinBank">
+         <font>
+            <Font name="Nunito Regular" size="33.0" />
+         </font></Text>
+    </VBox>
+    <VBox layoutX="310.0" layoutY="14.0" prefHeight="200.0" prefWidth="271.0" styleClass="login_form_container" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <VBox styleClass="label-input-contianer">
+         <children>
+              <Label id="choice-prompt-text" text="Choose Your Account Type" />
+              <ChoiceBox fx:id="account_selector" prefWidth="150.0" styleClass="account_selector" />
+         </children>
+      </VBox>
+      <VBox styleClass="label-input-contianer">
+         <children>
+              <Label fx:id="payee_address_lbl" text="Payee Address" />
+              <TextField fx:id="payee_address_fld" styleClass="input_field" />
+         </children>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="81.0" styleClass="label-input-contianer">
+         <children>
+              <Label text="Password" />
+              <TextField fx:id="password_fld" styleClass="input_field" />
+         </children>
+      </VBox>
+        <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
+        <Label fx:id="error_lbl" styleClass="error_lbl" text="Error" />
+    </VBox>
+</AnchorPane>
