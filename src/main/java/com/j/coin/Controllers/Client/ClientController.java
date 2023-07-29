@@ -18,6 +18,9 @@ public class ClientController implements Initializable {
                     // get the client window and set center to transaction view
                     client_parent.setCenter(Model.getInstance().getViewFactory().getTransactionView());
                     break;
+                case "Accounts":
+                    client_parent.setCenter(Model.getInstance().getViewFactory().getAccountsView());
+                    break;
                 default:
                     // set client window center to dashboard view;
                     client_parent.setCenter(Model.getInstance().getViewFactory().getDashboradView());

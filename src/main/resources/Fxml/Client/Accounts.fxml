@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="accounts_container"
+            stylesheets="@../../Styles/Accounts.css" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.j.coin.Controllers.Client.AccountsController">
+   <VBox layoutX="599.0" layoutY="30.0" prefHeight="200.0" prefWidth="250.0" styleClass="sidemenu_container"
+         AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="30.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Move Funds to Savings Account"/>
+      <TextField/>
+      <Button mnemonicParsing="false" text="Transfer">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_DOWN"/>
+         </graphic>
+      </Button>
+   </VBox>
+   <VBox layoutX="559.0" layoutY="494.0" prefHeight="200.0" prefWidth="250.0" styleClass="sidemenu_container"
+         AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="400.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Move Funds to Savings Account"/>
+      <TextField/>
+      <Button mnemonicParsing="false" text="Transfer">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_UP"/>
+         </graphic>
+      </Button>
+   </VBox>
+   <AnchorPane layoutX="42.0" layoutY="36.0" prefHeight="200.0" prefWidth="200.0"
+               styleClass="account_section_container" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Checking Account" AnchorPane.leftAnchor="5.0"
+            AnchorPane.topAnchor="5.0"/>
+      <VBox layoutX="8.0" layoutY="16.0" prefHeight="200.0" prefWidth="100.0" styleClass="account_section_details"
+            AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="40.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number:"/>
+         <Label text="3452 4950"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Limit:"/>
+         <Label text="10"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:"/>
+         <Label text="2022-07-07"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:"/>
+         <Label text="\$3,000.00"/>
+      </VBox>
+      <Line endX="100.0" layoutX="-100.0" layoutY="66.0" startX="100.20707702636719" startY="259.29290771484375"
+            AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="32.0"/>
+   </AnchorPane>
+   <AnchorPane layoutX="14.0" layoutY="375.0" prefHeight="200.0" prefWidth="200.0"
+               styleClass="account_section_container" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="400.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account" AnchorPane.leftAnchor="5.0"
+            AnchorPane.topAnchor="5.0"/>
+      <VBox layoutX="8.0" layoutY="16.0" prefHeight="200.0" prefWidth="100.0" styleClass="account_section_details"
+            AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="40.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number:"/>
+         <Label text="3452 4950"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Withdrawal Limit:"/>
+         <Label text="\$2,000"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Created:"/>
+         <Label text="2022-07-07"/>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:"/>
+         <Label text="\$12,000.00"/>
+      </VBox>
+      <Line endX="100.0" layoutX="-100.0" layoutY="66.0" startX="99.79289245605469" startY="255.2928924560547"
+            AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="30.0"/>
+   </AnchorPane>
+</AnchorPane>

@@ -13,6 +13,7 @@ public class ViewFactory {
     private AnchorPane dashboradView;
     private AnchorPane transactionView;
     private final StringProperty clientSelectedMenuItem;
+    private AnchorPane accountsView;
 
     public ViewFactory() {
         this.clientSelectedMenuItem = new SimpleStringProperty("");
@@ -31,6 +32,17 @@ public class ViewFactory {
             }
         }
         return dashboradView;
+    }
+
+    public AnchorPane getAccountsView() {
+        if(accountsView == null) {
+            try{
+                accountsView = new FXMLLoader(getClass().getResource("/Fxml/Client/Accounts.fxml")).load();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return accountsView;
     }
 
     public AnchorPane getTransactionView() {
@@ -70,6 +82,7 @@ public class ViewFactory {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Coin Bank");
+        stage.setAlwaysOnTop(true);
         this.currentStage = stage;
         stage.show();
     }

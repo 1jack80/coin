@@ -1,0 +1,67 @@
+Text, Label,Button {
+    -fx-font-family: "Nunito"
+}
+
+/* Button Styling */
+Button {
+    -fx-background-color: #132a13;
+    -fx-text-fill: #ffffff;
+}
+Button:hover {
+    -fx-cursor: hand;
+}
+Button FontAwesomeIconView {
+    -fx-fill: #ffffff;
+}
+
+.accounts_container {
+    -fx-background-color: #eeeeee;
+}
+
+/* Accounts Section */
+.account_section_container {
+    -fx-background-color: #eeeeee;
+}
+.account_section_container Line {
+    -fx-stroke: #888888;
+}
+.account_section_container > Text {
+    -fx-font-size: 1.4em;
+    -fx-fill: #777777;
+}
+
+.account_section_details {
+    -fx-spacing: 10;
+}
+
+.account_section_details Text {
+    -fx-font-size: 1.1em;
+    -fx-fill: #777777;
+}
+.account_section_details Label {
+    -fx-font-size: 1.2em;
+    -fx-text-fill: #222222;
+    -fx-font-weight: bold;
+}
+
+/* Sidebar Section */
+
+.sidemenu_container {
+    -fx-spacing: 12;
+}
+.sidemenu_container Text {
+    -fx-font-size: 1.2em;
+    -fx-fill: #777777;
+}
+.sidemenu_container Button {
+    -fx-pref-width: 250;
+    -fx-pref-height: 40;
+    -fx-font-size: 1.4em;
+}
+
+.sidemenu_container TextField {
+    -fx-pref-height: 40;
+    -fx-pref-width: 120;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, #aaaaaa, 3, 0, 0, 3);
+}
